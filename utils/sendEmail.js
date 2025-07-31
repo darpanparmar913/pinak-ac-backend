@@ -63,7 +63,7 @@ const bookingDate = moment().format("MMMM Do YYYY, h:mm A");
     `,
   };
 
-  // await transporter.sendMail(mailOptions);
+  await transporter.sendMail(mailOptions);
 };
 
 module.exports = sendEmail;
