@@ -48,6 +48,10 @@ const bookingDate = moment().format("MMMM Do YYYY, h:mm A");
               <td style="padding: 10px; font-weight: bold;">⚠️ Problem Summary</td>
               <td style="padding: 10px;">${data.problemSummary}</td>
             </tr>
+            <tr style="background-color: #f9f9f9;">
+              <td style="padding: 10px; font-weight: bold;">💰 Payment Method</td>
+              <td style="padding: 10px;">${data.paymentMethod}</td>
+            </tr>
           </table>
         </div>
 
@@ -59,7 +63,7 @@ const bookingDate = moment().format("MMMM Do YYYY, h:mm A");
     `,
   };
 
-  await transporter.sendMail(mailOptions);
+  // await transporter.sendMail(mailOptions);
 };
 
 module.exports = sendEmail;

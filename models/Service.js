@@ -1,11 +1,14 @@
 const mongoose = require("mongoose");
 
 const serviceSchema = new mongoose.Schema({
-  name: String,
+  uniqueNumber: Number,
+  fullName: String,
   address: String,
-  mobile: String,
-  problem: String,
+  mobileNumber: String,
+  problemSummary: String,
   acType: String,
+  paymentMethod: String,
+  profit: Number,
   createdAt: {
     type: Date,
     default: Date.now,
